@@ -1,0 +1,109 @@
+07-01:45:32 INFO load_story_from_file		Used   9.8 % CPU: 0.672 sec	 Mem: [avr: 9.45 KB, max:23.61 KB]	( load text line from filename )
+07-01:45:32 ERROR Exception in generate_and_download_image: module 'openai' has no attribute 'error'
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 74, in generate_and_download_image
+    response = openai.Image.create(
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Image, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 58, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 95, in generate_and_download_image
+    except openai.error.InvalidRequestError as e:
+AttributeError: module 'openai' has no attribute 'error'
+Stack (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 302, in <module>
+    main(story_file)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 247, in main
+    image_file = generate_and_download_image(line, image_file , output_dir)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 26, in wrapper
+    logging.exception(f"Exception in {func.__name__}: {e}", exc_info=True, stack_info=True)
+07-01:45:32 INFO generate_and_download_image		Used   0.2 % CPU: 0.699 sec	 Mem: [avr:80.65 KB, max:101.82 KB]	(Generate an image using OpenAI's DALL-E API and download it to a local file.)
+07-01:45:32 INFO generate_audio Audio from In a cozy cafe, a delicious cup of boba tea sits on a vibrant red table. to output/0000_audio.mp3
+07-01:45:34 INFO generate_audio		Used   5.6 % CPU: 1.312 secs	 Mem: [avr:270.60 KB, max: 1.13 MB]	( Audio from text )
+07-01:45:34 ERROR Exception in generate_and_download_image: module 'openai' has no attribute 'error'
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 74, in generate_and_download_image
+    response = openai.Image.create(
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Image, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 58, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 95, in generate_and_download_image
+    except openai.error.InvalidRequestError as e:
+AttributeError: module 'openai' has no attribute 'error'
+Stack (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 302, in <module>
+    main(story_file)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 247, in main
+    image_file = generate_and_download_image(line, image_file , output_dir)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 26, in wrapper
+    logging.exception(f"Exception in {func.__name__}: {e}", exc_info=True, stack_info=True)
+07-01:45:34 INFO generate_and_download_image		Used   3.7 % CPU: 0.681 sec	 Mem: [avr: 1.31 KB, max:14.03 KB]	(Generate an image using OpenAI's DALL-E API and download it to a local file.)
+07-01:45:34 INFO generate_audio Audio from A charming white cat gazes at Baby Yoda through the window with curiosity. to output/0001_audio.mp3
+07-01:45:35 INFO generate_audio		Used   4.7 % CPU: 0.671 sec	 Mem: [avr: 3.06 KB, max:835.56 KB]	( Audio from text )
+07-01:45:35 INFO morph_images from: None to: None in 180 Steps
+07-01:45:35 ERROR An error occurred while morphing images: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3471, in open
+    fp.seek(0)
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 212, in morph_images
+    with Image.open(image1) as img1, Image.open(image2) as img2:
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3473, in open
+    fp = io.BytesIO(fp.read())
+AttributeError: 'NoneType' object has no attribute 'read'
+
+07-01:45:36 INFO morph_images		Used   6.1 % CPU: 0.678 sec	 Mem: [avr:346.94 KB, max:372.53 KB]	( morph images in number of steps)
+07-01:45:36 ERROR Exception in main: not enough values to unpack (expected 2, got 0)
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 270, in main
+    morphed_images, start_index = morph_images(images[cnt - 1], images[cnt], morph_steps, output_dir, start_index )
+ValueError: not enough values to unpack (expected 2, got 0)
+Stack (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 302, in <module>
+    main(story_file)
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/_utils.py", line 26, in wrapper
+    logging.exception(f"Exception in {func.__name__}: {e}", exc_info=True, stack_info=True)
+07-01:45:36 INFO main		Used  13.8 % CPU: 4.098 secs	 Mem: [avr:   0.0 B, max:   0.0 B]	(None)

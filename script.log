@@ -1,0 +1,6 @@
+2025-03-07 10:40:28,300 - ERROR - Image generation failed: module 'openai' has no attribute 'images'
+2025-03-07 10:40:28,963 - ERROR - Image generation failed: module 'openai' has no attribute 'images'
+2025-03-07 10:40:29,347 - ERROR - Error morphing images: 'NoneType' object has no attribute 'read'
+2025-03-07 10:40:29,347 - ERROR - Image generation failed: module 'openai' has no attribute 'images'
+2025-03-07 10:40:29,758 - ERROR - Error morphing images: 'NoneType' object has no attribute 'read'
+2025-03-07 10:40:29,814 - ERROR - Error creating video: Command 'ffmpeg -framerate 30 -i "output/morphed_image_%04d.png" -i "output/merged_audio.mp3" -i "output/subtitles.srt"                -map 0:v -c:v libx265 -preset slow -crf 25                -map 1:a -c:a copy -metadata:s:a:0 language=eng                -map 2:s -c:s mov_text -metadata:s:s:0 language=eng -disposition:s:s:0 default+forced                -y "output/final_video.mp4"' returned non-zero exit status 234.

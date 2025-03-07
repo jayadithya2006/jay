@@ -1,0 +1,135 @@
+2025-03-07 10:29:02,567 - ERROR - Error generating image for 'In a cozy cafe, a delicious cup of boba tea sits on a vibrant red table.': 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 49, in generate_and_download_image
+    response.raise_for_status()
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+
+2025-03-07 10:29:03,284 - ERROR - Error generating image for 'A charming white cat gazes at Baby Yoda through the window with curiosity.': 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 49, in generate_and_download_image
+    response.raise_for_status()
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+
+2025-03-07 10:29:03,707 - ERROR - Error morphing images: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3471, in open
+    fp.seek(0)
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 118, in morph_images
+    with Image.open(image1) as img1, Image.open(image2) as img2:
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3473, in open
+    fp = io.BytesIO(fp.read())
+AttributeError: 'NoneType' object has no attribute 'read'
+
+2025-03-07 10:29:04,017 - ERROR - Error generating image for 'The adorable white cat grins as Baby Yoda and cries out for assistance, clutching at a bottle of milk tightly in his tiny hand.': 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 49, in generate_and_download_image
+    response.raise_for_status()
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+
+2025-03-07 10:29:04,914 - ERROR - Error morphing images: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3471, in open
+    fp.seek(0)
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 118, in morph_images
+    with Image.open(image1) as img1, Image.open(image2) as img2:
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3473, in open
+    fp = io.BytesIO(fp.read())
+AttributeError: 'NoneType' object has no attribute 'read'
+
+2025-03-07 10:29:05,222 - ERROR - Error generating image for 'A caring teacher rushes to the rescue, but arrives a moment too late to offer the boba tea to Baby Yoda.': 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 49, in generate_and_download_image
+    response.raise_for_status()
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+
+2025-03-07 10:29:05,977 - ERROR - Error morphing images: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3471, in open
+    fp.seek(0)
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 118, in morph_images
+    with Image.open(image1) as img1, Image.open(image2) as img2:
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3473, in open
+    fp = io.BytesIO(fp.read())
+AttributeError: 'NoneType' object has no attribute 'read'
+
+2025-03-07 10:29:06,357 - ERROR - Error generating image for 'The boba tea spills onto the floor, causing the white cat to shriek in surprise. The teacher is startled by the commotion, while Baby Yoda bursts into laughter at the unfolding scene.': 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 49, in generate_and_download_image
+    response.raise_for_status()
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+
+2025-03-07 10:29:07,412 - ERROR - Error morphing images: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3471, in open
+    fp.seek(0)
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 118, in morph_images
+    with Image.open(image1) as img1, Image.open(image2) as img2:
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3473, in open
+    fp = io.BytesIO(fp.read())
+AttributeError: 'NoneType' object has no attribute 'read'
+
+2025-03-07 10:29:07,790 - ERROR - Error generating image for 'The end.': 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 49, in generate_and_download_image
+    response.raise_for_status()
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/images/generations
+
+2025-03-07 10:29:08,101 - ERROR - Error morphing images: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3471, in open
+    fp.seek(0)
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 118, in morph_images
+    with Image.open(image1) as img1, Image.open(image2) as img2:
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/.venv/lib/python3.9/site-packages/PIL/Image.py", line 3473, in open
+    fp = io.BytesIO(fp.read())
+AttributeError: 'NoneType' object has no attribute 'read'
+
+2025-03-07 10:29:08,764 - ERROR - Error creating video: Command '
+        ffmpeg -framerate 30 -i output/morphed_image_%04d.png -i output/merged_audio.mp3 -i output/subtitles.srt             -map 0:v -c:v libx265 -preset slow -crf 25             -map 1:a -c:a copy -metadata:s:a:0 language=eng             -map 2:s -c:s mov_text -metadata:s:s:0 language=eng -disposition:s:s:0 default+forced             -y output/final_video.mp4
+        ' returned non-zero exit status 234.
+Traceback (most recent call last):
+  File "/Users/jayadithyavalishetty/Downloads/Story-to-Video-main/ChatGPT text to movie.py", line 109, in create_video
+    subprocess.run(cmd, shell=True, check=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '
+        ffmpeg -framerate 30 -i output/morphed_image_%04d.png -i output/merged_audio.mp3 -i output/subtitles.srt             -map 0:v -c:v libx265 -preset slow -crf 25             -map 1:a -c:a copy -metadata:s:a:0 language=eng             -map 2:s -c:s mov_text -metadata:s:s:0 language=eng -disposition:s:s:0 default+forced             -y output/final_video.mp4
+        ' returned non-zero exit status 234.
+
